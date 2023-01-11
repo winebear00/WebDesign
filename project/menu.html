@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="flexslider/flexslider.css" type="text/css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<link href="style.css" rel="stylesheet">
+<title>Organic Paradise</title>
+
+<style>
+
+	.flex-caption {
+		width: 96%;
+		padding: 2%;
+		left: 0;
+		bottom: 0;
+		background: rgba(0,0,0,.5);
+		color: #fff;
+		text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	#header {
+		width: 900px;
+		height: 650px;
+	}
+
+
+	.flexslider {
+		width:900px;
+		height:500px;
+		margin: 100px 0 0 0;
+	}
+	.flexslider .slides img {
+		width:900px;
+		height:500px;
+	}
+
+	.flex-control-nav {
+		bottom: -24px;
+	}
+
+	.flex-caption {
+		background-color: rgb(111, 135, 107);
+		font-size: 20px;
+		font-style: italic;
+		font-weight: bold;
+		position: relative;
+		margin-top: 0;
+
+	}
+
+	.flex-control-thumbs li {
+		width:16.667%;
+		height:85px;
+	}
+
+	.slides, .slides > li, .flex-control-nav, .flex-direction-nav
+	{
+		margin: -5px 0;
+	}
+
+	h5 {
+		font-size: 30px;
+		font-weight: bold;
+		color: #3f251b;
+		text-align: center;
+		margin-top: 30px;
+		margin-bottom: 40px;
+		background-color: rgba(111, 135, 107, 0.6);
+		height:100px;
+		width:100%;
+		padding-top: 30px;
+	}
+
+	.row {
+		width:900px;
+		height: 350px;
+	}
+
+	.greenbox {
+		width:450px;
+		height:350px;
+		background-color: rgb(111, 135, 107);
+		float:left;
+	}
+
+	.whitebox {
+		width:450px;
+		height:350px;
+		background-color: white;
+		float:left;
+	}
+
+	.row img {
+		width:450px;
+		height:350px;
+	}
+
+	h2 {
+		padding:20px 0 0 20px;
+		color:white;
+		font-weight: bold;
+	}
+
+	h3 {
+		padding:0 0 0 20px;
+		font-size: 17px;
+		color:white;
+	}
+
+	.greenbox p {
+		padding:0 20px;
+		font-size: 17px;
+		color:white;
+	}
+
+
+</style>
+</head>
+<body>
+	<div id="nav">
+		<div id="logo">
+		<h1><a href="index.html">Organic Paradise</a></h1>
+		<img src="images/logo3.png" alt="logo">
+		</div>
+		<div id="nav-container">
+		<a href="index.html">About</a>
+		<a href="menu.html">Menu</a>
+		<a href="contact.html">Contact</a>
+		</div>
+		<div class="clearfloat"></div>
+	</div> <!--close nav div-->
+
+	<div id="wrapper">
+
+		<div id="header">
+		<div class="flexslider">
+			<ul class="slides">
+				<li data-thumb="images/pomergrant.jpg">
+				  <img src="images/pomergrant.jpg" alt="pomer">
+				  <p class="flex-caption">Strong vitamin C and other minerals</p>
+				</li>
+				<li data-thumb="images/protein.jpg">
+				  <img src="images/protein.jpg" alt="protein">
+				  <p class="flex-caption">High protein and low carb</p>
+				</li>
+				<li data-thumb="images/oil.jpg">
+				  <img src="images/oil.jpg" alt="oil">
+				  <p class="flex-caption">Best cooking oil in our recipes</p>
+				</li>
+				<li data-thumb="images/drink.jpg">
+				  <img src="images/drink.jpg" alt="drink">
+				  <p class="flex-caption">Detox drinks</p>
+				</li>
+				<li data-thumb="images/eathealthy.jpg">
+				  <img src="images/eathealthy.jpg" alt="healthy">
+				  <p class="flex-caption">Healthy eating daily</p>
+				</li>
+				<li data-thumb="images/life.jpg">
+				  <img src="images/life.jpg" alt="life">
+				  <p class="flex-caption">Embrace the nature</p>
+				</li>
+			</ul>
+		</div>
+		</div> <!--close header div-->
+		<div id="menulist">
+		<h5>Best quality, highest nutrition, and well handling.</h5>
+		<div class="row">
+			<div class="greenbox">
+				<h2>Signature Recipe</h2>
+				<h3>Gluten-free & Hassle-free</h3>
+				<p>Ingredients: enchilada, parsley, peanuts, alfalfa, zuchini and salsa roja</p>
+			</div>
+			<div class="whitebox">
+				<img src="images/meal1.jpg" alt="meal1">
+			</div>
+		</div>
+		<div class="row">
+			<div class="whitebox">
+				<img src="images/meal2.jpg" alt="meal2">
+			</div>
+			<div class="greenbox">
+				<h2>Keto Recipe</h2>
+				<h3>Enrich & Energize</h3>
+				<p>Ingredients: string beans, kale, cabbage, alfalfa, and chips</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="greenbox">
+				<h2>Paleo Recipe</h2>
+				<h3>We hunt. You gather</h3>
+				<p>Ingredients: shallots, spinach, green onions, jalapeno, carne asada and salsa roja</p>
+			</div>
+			<div class="whitebox">
+				<img src="images/meal3.jpg" alt="meal3">
+			</div>
+		</div>
+		<div class="row">
+			<div class="whitebox">
+				<img src="images/meal4.jpg" alt="meal4">
+			</div>
+			<div class="greenbox">
+				<h2>Pescetarian Recipe</h2>
+				<h3>Fresh-caught for a fresh start</h3>
+				<p>Ingredients: string beans, almond, salmon, tuna, and brown rice</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="greenbox">
+				<h2>Vegetarian Recipe</h2>
+				<h3>Organically delicious</h3>
+				<p>Ingredients: pork, spaghetti, mint, cheese and broccoli</p>
+			</div>
+			<div class="whitebox">
+				<img src="images/meal5.jpg" alt="meal5">
+			</div>
+		</div>
+		<div class="row">
+			<div class="whitebox">
+				<img src="images/meal6.jpg" alt="meal6">
+			</div>
+			<div class="greenbox">
+				<h2>Detox Recipe</h2>
+				<h3>Reset & Refresh</h3>
+				<p>Ingredients: pasta, carrot, sea bass, and parsley</p>
+			</div>
+		</div>
+
+		</div> <!--close menulist div-->
+
+	</div> <!--close wrapper div-->
+
+	<div id="footer">
+		<p>Thank you for visting, enjoy your healthy eating.</p>
+		<p>2022.All rights reserved</p>
+		<img src="images/logo3.png" alt="logo">
+	</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="flexslider/jquery.flexslider.js"></script>
+<!--add the flexslider here-->
+<script>
+	$(window).load(function() {
+	  $('.flexslider').flexslider({
+	    animation: "slide",
+	    controlNav: "thumbnails"
+	  });
+	});
+</script>
+
+</body>
+</html>
