@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Responsive Resume">
+	<meta name="keywords" content="Resume, Responsive">
+	<meta name="author" content="Haijin Jiang">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Haijin Jiang|Student Page</title>
+	<style>
+
+		em{
+			background-color: lavender;
+		}
+
+		img{
+			height: 200px;
+			width: auto;
+		}
+
+		#content {
+			width: 900px;
+			height: 1100px;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 15px;
+		}
+
+
+		body {
+			/*background-color: thistle;*/
+			background-image: url("wallpaper.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		#row1 {
+			background-color: lavenderblush;
+			color: black;
+			text-align: center;
+			padding: 20px;
+
+		}
+
+		.firstcolumn {
+			float: left;
+			width: 395px;
+			padding: 20px;
+			text-align: left;
+		}
+
+		.secondcolumn {
+			float: left;
+			width: 395px;
+			padding: 20px;
+			text-align: left;
+		}
+
+		#row2 {
+			background-color: white;
+			height: 400px;
+			padding: 5px;
+		}
+
+		#row3 {
+			background-color: lavender;
+			height: 350px;
+			padding: 5px;
+		}
+
+		.clearfloat {
+			clear: both;
+		}
+
+		ul li a {
+			text-decoration: none;
+			color: darkred;
+			font-size: 17px;
+		}
+
+		ul li {
+			list-style: none;
+		}
+
+		ol li {
+			list-style: none;
+			color: darkred;
+		}
+
+		@media (max-width: 767px) {
+
+			#content {
+				width: auto;
+				height: auto;
+			}
+
+			.firstcolumn, .secondcolumn {
+				float: none;
+				width: auto;
+				margin: 0;
+			}
+
+			#row1, #row2 {
+				width: auto;
+				height: auto;
+			}
+
+			#row2 .firstcolumn {
+				text-align: center;
+			}
+
+			#row2 .secondcolumn {
+				text-align: center;
+			}
+
+			#row2 .secondcolumn li {
+				text-align: left;
+			}
+			#row2 .firstcolumn p {
+				text-align: left;
+			}
+
+			#row3 .firstcolumn {
+				text-align: center;
+			}
+
+			#row3 .secondcolumn {
+				text-align: center;
+			}
+			#row3 .secondcolumn li {
+				text-align: left;
+			}
+			#row3 .firstcolumn li {
+				text-align: left;
+			}
+
+
+		}
+
+
+
+		
+		
+	</style>
+</head>
+
+<body>
+		<div id="content">
+
+		<div id="row1">
+	<h1>Haijin Jiang/Connie</h1>
+
+	<p><a href="mailto:haijinji@usc.edu">haijinji@usc.edu</a></p>
+		</div>
+
+		<div id="row2">
+
+	<div class="firstcolumn">
+
+	<p>Favorite color:<em>lavender</em></p>
+
+	<p>Favorite website:<a href="https://www.stardewvalley.net/" target="_blank">Stardew Valley</a></p>
+
+	<h2>Favorite activity: Wine Tasting</h2>
+	<img src="winetaste.jpeg" alt="Wine tasting picture"/>
+	</div>
+
+	<div class="secondcolumn">
+
+	<h3>School Schedule</h3>
+
+	<ol>
+		<li>&#127863;CSCI 103</li>
+		<li>&#127863;EE 109</li>
+		<li>&#127863;ITP 104</li>
+		<li>&#127863;CCSC 165</li>
+		<li>&#127863;Math 407</li>
+
+	</ol>
+</div> <!--close secondcolum div-->
+<div class="clearfloat"></div>
+</div> <!--close row2 div-->
+
+<div id="row3">
+
+	<div class="firstcolumn">
+
+	<h3>Assignments</h3>
+
+	<ul>
+		<li><a href="assignment01/index.html">&#127865;Assignment 01:Web Resume</a></li>
+		<li><a href="assignment02/index.html">&#127865;Assignment 02:TV Show/Movie Article</a></li>
+	</ul>
+</div>
+
+<div class="secondcolumn">
+
+	<h3>Labs</h3>
+
+	<ul>
+		<li><a href="lab02/index.html">&#127864;Lab 02: Student Page</a></li>
+		<li><a href="lab03/index.html">&#127864;Lab 03: Updated Resume</a></li>
+		<li><a href="lab04/index.html">&#127864;Lab 04: Student Layout Page</a></li>
+	</ul>
+</div> <!--close column div-->
+<div class="clearfloat"></div>
+</div> <!--close row3 div-->
+</div>
+
+
+
+
+</body>
+
+</html>

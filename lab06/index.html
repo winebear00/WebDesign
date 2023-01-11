@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flower photo gallery</title>
+<style>
+
+	#wrapper {
+		background-image: url("images/wallpaper.jpg");
+		background-size: cover;
+		width: 1000px;
+		height: 1000px;
+		margin: 0 auto;
+	}
+
+	#header p {
+		font-size: 50px;
+		text-align: center;
+		padding: 50px;
+		font-weight: bold;
+		font-family: monospace;
+		margin: 0 auto;
+		color: darkgoldenrod;
+	}
+
+	.column {
+		width: 250px;
+		height: 700px;
+		border: 5px dashed gray;
+		background-color: white;
+		margin: 36px;
+		float: left;
+		background-image: url("images/pastel.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	
+
+	.clearfloat {
+		clear: both;
+	}
+
+	.photo {
+		width: 200px;
+		height: 200px;
+	}
+
+	.container {
+		margin: 10px;
+		padding: 30px 15px;
+
+	}
+
+	.container p {
+		text-align: center;
+		font-size: 28px;
+		font-style: italic;
+		visibility: hidden;
+		color: darkgoldenrod;
+		font-weight: bold;
+		background-color: white;
+
+	}
+
+	.container:hover p {
+		visibility: visible;
+
+	}
+
+	body {
+		background-color: #838996;
+	}
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<div id="header">
+		<p>Flower Field</p>
+		<div class="clearfloat"></div>
+		</div> <!--close header div-->
+
+	<div class="column">
+		<div class="container">
+		<img class="photo" src="images/tulip.jpg" alt="tulip" />
+		<p>Tulip Field</p>
+		</div>
+
+		<div class="container">
+		<img class="photo" src="images/daisy.jpg" alt="daisy" />
+		<p>Daisy Field</p>
+		</div>
+	<div class="clearfloat"></div>
+	</div> <!--close the column div-->
+		
+		<div class="column">
+		<div class="container">
+		<img class="photo" src="images/sunflower.jpg" alt="sunflower" />
+		<p>Sunflower Field</p>
+		</div>
+
+		<div class="container">
+		<img class="photo" src="images/rose.jpg" alt="rose" />
+		<p>Rose Field</p>
+		</div>
+	<div class="clearfloat"></div>
+	</div> <!--close the column div-->
+
+	<div class="column">
+		<div class="container">
+		<img class="photo" src="images/hydrangea.jpg" alt="hydra" />
+		<p>Hydrangea Field</p>
+		</div>
+
+		<div class="container">
+		<img class="photo" src="images/lily.jpg" alt="lily" />
+		<p>Lily Field</p>
+		</div>
+	<div class="clearfloat"></div>
+	</div> <!--close the column div-->
+
+	</div> <!--close wrapper div-->
+
+</body>
+
+
+
+</html>

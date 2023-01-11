@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Animation</title>
+<style>
+
+	body {
+		background-image: url("images/bg1.jpeg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	img {
+		position: relative;
+		top: 250px;
+	}
+
+	#elsa {
+		animation: elsamove 5s linear infinite;
+		-moz-animation: elsamove 5s linear infinite;
+		-webkit-animation: elsamove 5s linear infinite;
+		-o-animation: elsamove 5s linear infinite;
+
+	}
+
+	@keyframes elsamove {
+
+	0% {transition-delay:5s; transition-timing-function: cubic-bezier(0,0,1,1); left: 0;}
+	25% {transition-delay:5s; transition-timing-function: cubic-bezier(0,0,1,1); left: 250px; }
+	50% {transition-delay:5s; transition-timing-function: cubic-bezier(0,0,1,1);  left: 500px;}
+	75% {transition-delay:5s; transition-timing-function: cubic-bezier(0,0,1,1); left: 750px;}
+	100% {transition-delay:5s; transition-timing-function: cubic-bezier(0,0,1,1); left: 1000px; }
+
+	}
+
+
+	#speech-bubble {
+	   content: " " ;
+	   width: 250px; 
+	   height: 50px; 
+	   background: #5ac4ed;
+	   position: absolute;
+	   left:100px;
+	   border-radius: 50px;
+	   color: white;
+	   text-align: center;
+	   font-size: 18px;
+	   padding: 5px;
+	   font-style: italic;
+	   font-weight: bold;
+	   position: absolute;
+	   top: 200px;
+	   right: 0;
+	   	animation: elsamove 5s linear infinite;
+		-moz-animation: elsamove 5s linear infinite;
+		-webkit-animation: elsamove 5s linear infinite;
+		-o-animation: elsamove 5s linear infinite;
+
+	}
+
+</style>
+
+
+</head>
+<body>
+
+<img src="https://i.pinimg.com/originals/b4/98/03/b4980307bea7ef15bde709f181d5401b.gif" height="450" width="345" alt="elsa" id="elsa">
+<div id="speech-bubble">Hello, my dear people. Let's party!</div>
+
+
+</body>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Winebear Tea Shop</title>
+<style>
+
+#header {
+	background-image: url("images/milktea2.jpg");
+	height: 300px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: saddlebrown;
+	text-align: center;
+	line-height: 200px;
+	font-size: 30px;
+	padding: 20px;
+	text-shadow: 2px 2px 10px black;
+	margin-top: auto;
+}
+
+body {
+	background-image: url("images/milktea.jpg");
+	margin: 0 auto;
+}
+
+#wrapper {
+	width: 1000px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: goldenrod;
+	height: 1520px;
+
+	
+
+}
+
+#sidebar {
+	float: left;
+	width: 300px;
+	padding: 10px;
+	background-image: url("images/brown.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#form {
+	float: left;
+	width: 660px;
+	padding: 10px;
+	background-color: goldenrod;
+}
+
+.picture {
+	width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 30px;
+	border-radius: 50%;
+	height: 180px;	
+
+}
+
+p {
+	color: maroon;
+	font-size: 20px;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 0;
+}
+
+h2 {
+	color: maroon;
+	text-shadow: 2px 2px 2px black;
+	text-align: center;
+	font-size: 30px;
+}
+
+.formp {
+	text-align: left;
+	padding: 10px;
+}
+
+.form-row {
+	margin: 20px 0;
+	clear: both;
+}
+
+.main-label {
+	margin: 20px 0;
+	padding: 20px 0;
+	width: 100px;
+		}
+
+.textbox {
+	margin: 5px 0;
+	width: 100px;
+}
+
+.address-textbox {
+	margin: 5px 0;
+	width: 280px;
+}
+
+#note {
+	width: 600px;
+	height: 50px;
+	padding: 5px;
+}
+
+button {
+	padding: 10px 20px;
+	margin: 0 100px;
+}
+
+#submit-btn {
+	background-color: saddlebrown;
+	color: white;
+	font-weight: bold;
+	font-size: 15px;
+	font-style: italic;
+}
+
+#reset {
+	background-image: url("images/brown.jpg");
+	background-size: cover;
+	color: black;
+	font-weight: bold;
+	font-size: 15px;
+	font-style: italic;
+}
+
+.clearfloat {
+	clear: both;
+}
+
+#footer {
+	background-color: tan;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	}
+
+.footerword {
+	text-align: center;
+	padding: 20px;
+	margin: 0;
+}
+</style>
+</head>
+<body>
+
+<div id="header">
+<h1>WineBear Tea Shop</h1>
+</div>
+
+<div id="wrapper">
+
+<div id="sidebar">
+
+<h2>Recommendations</h2>
+
+<div class="gallery">
+	<img class="picture" src="images/1.jpg" alt="photo1">
+	<p>Brown Sugar Milk Tea</p>
+</div>
+<div class="gallery">
+	<img class="picture" src="images/2.jpg" alt="photo2">
+	<p>Taro Milk Tea</p>
+</div>
+<div class="gallery">
+	<img class="picture" src="images/3.jpg" alt="photo3">
+	<p>Mango Milk Tea</p>
+</div>
+<div class="gallery">
+	<img class="picture" src="images/4.jpg" alt="photo4">
+	<p>Strawberry Milk Tea</p>
+</div>
+<div class="gallery">
+	<img class="picture" src="images/5.jpg" alt="photo5">
+	<p>Matcha Milk Tea</p>
+</div>
+
+
+</div> <!--close sidebar div-->
+<!-- ------------------------------------------------------- -->
+<div id="form">
+<h2>Order Form</h2>
+<p class="formp">Please make your order here. If you have any question,<br>
+feel free to contact us at <a href="mailto:winebearteashop@happy.com">WineBear Tea Shop</a></p>
+
+<form action="confirmation.html">
+	<div class="form-row">
+	<label class="main-label" for="name">Name:</label>
+	<input id="name" type="text" placeholder="Your name" required/>
+	</div>
+
+	<div class="form-row">
+	<label class="main-label" for="address">Address:</label>
+	<input id="address" class="address-textbox" type="text" placeholder="Please enter your address" required/>
+	<label class="main-label" for="city">City:</label>
+	<input id="city" class="textbox" type="text" required/>
+	<label class="main-label" for="state">State:</label>
+	<input id="state" class="textbox" type="text" required/>
+	<label class="main-label" for="zipcode">Zip Code:</label>
+	<input id="zipcode" class="textbox" type="text" required/>
+	</div>
+
+	<div class="form-row">
+	<label class="main-label" for="email">Email:</label>
+	<input id="email" type="email" placeholder="Your email"/>
+	</div>
+
+	<div class="form-row">
+	<label class="main-label" for="phone-id">Phone Number:</label>
+	<input id="phone-id" type="tel" placeholder="(213)123-1234" required/>
+	</div>
+
+	<div class="form-row">
+	<label class="main-label" for="category">Please select your drinks</label>
+	<select id="category">
+		<option value="select">Select</option>
+		<option value="brownsugar">Brown sugar milk tea</option>
+		<option value="taro">Taro milk tea</option>
+		<option value="mango">Mango milk tea</option>
+		<option value="strawberry">Strawberry milk tea</option>
+		<option value="matcha">Matcha milk tea</option>
+	</select>
+	</div>
+
+	<div class="form-row">
+	<label class="main-label" for="size">Please choose the size</label>
+	<select id="size">
+		<option value="select">Select</option>
+		<option value="tall">Tall</option>
+		<option value="grande">Grande</option>
+		<option value="venti">Venti</option>
+	</select>
+	</div>
+
+	<div class="form-row">
+	<label class="main-label">Sugar level:</label>
+	<label><input type="radio" name="sugarlevel" value="100%">100%</label>
+	<label><input type="radio" name="sugarlevel" value="75%">75%</label>
+	<label><input type="radio" name="sugarlevel" value="50%">50%</label>
+	<label><input type="radio" name="sugarlevel" value="25%">25%</label>
+	<label><input type="radio" name="sugarlevel" value="nosugar">no sugar</label>
+	</div>
+
+	<div class="form-row">
+	<label class="main-label">Ice level:</label>
+	<label><input type="radio" name="icelevel" value="regular">Regular ice</label>
+	<label><input type="radio" name="icelevel" value="more">More ice</label>
+	<label><input type="radio" name="icelevel" value="less">Less ice</label>
+	<label><input type="radio" name="icelevel" value="none">No ice</label>
+	</div>
+
+	<div class="form-row">
+	<label class="main-label">Add extra items:</label>
+	<label><input type="checkbox" name="pudding" value="pudding">Pudding</label>
+	<label><input type="checkbox" name="ayu" value="ayu">Ayu jelly</label>
+	<label><input type="checkbox" name="honey" value="honey">Honey boba</label>
+	<label><input type="checkbox" name="crystal" value="crystal">Crystal boba</label>
+	<label><input type="checkbox" name="cream" value="cream">Cheese foam</label>
+	</div>
+
+	<div class="form-row">
+	<label><input type="checkbox" name="terms" value="terms" required>I accept terms and conditions.</label>
+	</div>
+
+	<div class="form-row">
+	<label class="main-label" for="note">Note:</label>
+	<textarea id="note"></textarea>
+	</div>
+
+	<div class="form-row">
+	<button id="submit-btn" type="submit">Place order</button>
+	<button id="reset" type="reset">Restart</button>
+	</div> 
+
+
+</form>
+
+
+</div> <!--close form div-->
+
+<div class="clearfloat"></div>
+</div> <!--close wrapper div-->
+
+<div id="footer">
+	<p class="footerword">More information, please refer to WineBear Tea Shop</p>
+</div>
+
+
+
+</body>
+
+</html>
